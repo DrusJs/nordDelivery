@@ -1,0 +1,375 @@
+@font-face {
+    font-family: "TacticSansExd";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/TacticSansExd-Reg.woff2") format('woff2'),
+       url("../fonts/TacticSansExd-Reg.woff") format('woff'),
+       url("../fonts/TacticSansExd-Reg.ttf") format('truetype');
+}
+@font-face {
+    font-family: "TacticSansExd";
+    font-style: italic;
+    font-weight: normal;
+    src: url("../fonts/TacticSansExd-RegIt.woff2") format('woff2'),
+       url("../fonts/TacticSansExd-RegIt.woff") format('woff'),
+       url("../fonts/TacticSansExd-RegIt.ttf") format('truetype');
+}
+@font-face {
+    font-family: "TacticSansExd";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/TacticSansExd-Med.woff2") format('woff2'),
+       url("../fonts/TacticSansExd-Med.woff") format('woff'),
+       url("../fonts/TacticSansExd-Med.ttf") format('truetype');
+}
+@font-face {
+    font-family: "TacticSansExd";
+    font-style: italic;
+    font-weight: 500;
+    src: url("../fonts/TacticSansExd-MedIt.woff2") format('woff2'),
+       url("../fonts/TacticSansExd-MedIt.woff") format('woff'),
+       url("../fonts/TacticSansExd-MedIt.ttf") format('truetype');
+}
+@font-face {
+    font-family: "TacticSansExd";
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fonts/TacticSansExd-Bld.woff2") format('woff2'),
+       url("../fonts/TacticSansExd-Bld.woff") format('woff'),
+       url("../fonts/TacticSansExd-Bld.ttf") format('truetype');
+}
+@font-face {
+    font-family: "TacticSansExd";
+    font-style: italic;
+    font-weight: bold;
+    src: url("../fonts/TacticSansExd-BldIt.woff2") format('woff2'),
+       url("../fonts/TacticSansExd-BldIt.woff") format('woff'),
+       url("../fonts/TacticSansExd-BldIt.ttf") format('truetype');
+}
+@font-face {
+    font-family: "TacticSansExd";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/TacticSansExd-Lgt.woff2") format('woff2'),
+       url("../fonts/TacticSansExd-Lgt.woff") format('woff'),
+       url("../fonts/TacticSansExd-Lgt.ttf") format('truetype');
+}
+@font-face {
+    font-family: "TacticSansExd";
+    font-style: italic;
+    font-weight: 300;
+    src: url("../fonts/TacticSansExd-LgtIt.woff2") format('woff2'),
+       url("../fonts/TacticSansExd-LgtIt.woff") format('woff'),
+       url("../fonts/TacticSansExd-LgtIt.ttf") format('truetype');
+}
+@font-face {
+    font-family: "TacticSansExd";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/TacticSansExd-Blk.woff2") format('woff2'),
+       url("../fonts/TacticSansExd-Blk.woff") format('woff'),
+       url("../fonts/TacticSansExd-Blk.ttf") format('truetype');
+}
+@font-face {
+    font-family: "TacticSansExd";
+    font-style: italic;
+    font-weight: 800;
+    src: url("../fonts/TacticSansExd-BlkIt.woff2") format('woff2'),
+       url("../fonts/TacticSansExd-BlkIt.woff") format('woff'),
+       url("../fonts/TacticSansExd-BlkIt.ttf") format('truetype');
+}
+@font-face {
+    font-family: "RobotoCondensedBold";
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fonts/RobotoCondensed-Bold.ttf") format('truetype');
+}
+
+:root {
+    --color-white: #FFFFFF;
+    --color-page: #F9FAFA;
+    --color-black: #000000;
+    --color-dark-bg: #131313;
+    --color-gray: #444444;
+    --color-red: #E80000;
+    --gradient-bg: radial-gradient(farthest-side at 52.6% 50.48%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%), #131313;
+    --box-shadow-primary: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    --font-family-primary: "TacticSansExd";
+    --font-family-button: "RobotoCondensedBold";
+    --transition: 260ms ease-in-out;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--color-page);
+    background-image: url(../images/icons/lines-main-bg.svg), url(../images/main-bg-search.png);
+    background-position: center top, left top;
+    background-repeat: repeat-y, no-repeat;
+}
+
+.container {
+    max-width: 1460px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+h1.title {
+    font-family: var(--font-family-primary);
+    font-weight: 800;
+    font-size: 36px;
+    color: var(--color-black);
+    text-transform: uppercase; 
+}
+h2.title {
+    font-family: var(--font-family-primary);
+    font-size: 36px;
+    color: var(--color-black);
+    text-transform: uppercase; 
+}
+h3.title {
+    font-family: var(--font-family-primary);
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--color-dark-bg);
+    text-transform: uppercase; 
+}
+.subtitle {
+    font-family: var(--font-family-primary);
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--color-gray);
+}
+p.text {
+    font-family: "Arial";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+}
+
+.header {
+
+}
+.header-inner {
+    background-color: var(--color-dark-bg);
+    background-image: var(--gradient-bg);
+}
+
+.header-link-list {
+    padding: 10px 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header-link-list__item {
+
+}
+.header-link-list__item a {
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-decoration: none;
+    color: var(--color-white);
+    font-family: "Arial";
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20.8px;
+}
+
+.header-panel {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+
+.header-phone {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.header-phone-number {
+    display: flex;
+    flex-direction: column;
+}
+.header-phone-number .text {
+    font-family: "Arial";
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 9px;
+    line-height: 14.4px;
+    letter-spacing: 0.9px; 
+}
+
+.header-phone-number a {
+    color: var(--color-black);
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+.main-section {
+    margin-top: 142px;
+}
+.main-section .wd {
+    max-width: 672px;
+}
+
+.main-section-text {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family-primary);
+    font-size: 24px;
+    font-weight: 500;
+    max-width: 593px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-top: 26px;
+    margin-bottom: 44px;
+}
+.main-section-text .large {
+    font-size: 48px;
+    font-weight: bold;
+}
+.main-section-text p:last-child {
+    align-self: flex-end;
+}
+
+.main-section-form {
+    background-color: var(--color-dark-bg);
+    background-image: var(--gradient-bg);
+    padding: 25px 25px 25px 0;
+    border-radius: 0px 100px 100px 0px;
+    display: flex;
+    margin-top: 55px;
+}
+.main-section-form-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    background-color: #383838;
+    border-radius: 100px;
+    max-width: 609px;
+}
+
+.main-section-form-inner input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: var(--font-family-button);
+    font-size: 18px;
+    color: var(--color-white);
+    letter-spacing: 1.8px; 
+}
+
+.main-section-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 90px;
+}
+.main-section-cards__item {
+    display: flex;
+    flex-direction: column;
+    font-family: "Arial";
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: var(--box-shadow-primary);
+    border-radius: 100px;
+    max-width: 325px;
+    width: 100%;
+}
+
+
+.footer {
+    flex-shrink: 0;
+}
+
+.primary-button {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    background-color: var(--color-red);
+    padding: 12px 30px;
+    font-family: var(--font-family-button);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28.8px;
+    color: var(--color-white);
+    transition: var(--transition);
+    cursor: pointer;
+}
+.primary-button.long {
+    width: 100%;
+}
+.primary-button.border {
+    background-color: transparent;
+    border: 1px solid var(--color-red);
+    color: var(--color-red);
+}
+.primary-button::after {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 13px;
+    background-image: url(../images/icons/arrow-button.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 20px;
+}
+.primary-button.border::after {
+    display: none;
+}
+
+.primary-button:hover {
+    background-color: #C50000;
+}
+.primary-button.border:hover {
+    border: 1px solid #C50000;
+    color: var(--color-white);
+}
+
+.c-red {
+    color: var(--color-red);
+}
+.c-black {
+    color: var(--color-black);
+}
+.c-gray {
+    color: var(--color-gray);
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+.fw-black {
+    font-weight: 800;
+}
+.fs-italic {
+    font-style: italic;
+}
+.m-auto {
+    margin: 0 auto;
+}
+
