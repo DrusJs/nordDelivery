@@ -194,7 +194,17 @@ p.text {
 .header-phone {
     display: flex;
     align-items: center;
+    position: relative;
     gap: 16px;
+    z-index: 1;
+    margin-right: 135px;
+}
+.header-phone .absolute {
+    position: absolute;
+    top: -20px;
+    left: -50px;
+    width: 700px;
+    z-index: -1;
 }
 .header-phone-number {
     display: flex;
@@ -255,6 +265,7 @@ p.text {
     border-radius: 0px 100px 100px 0px;
     display: flex;
     margin-top: 55px;
+    margin-right: 50%;
 }
 .main-section-form-inner {
     display: flex;
@@ -264,6 +275,7 @@ p.text {
     background-color: #383838;
     border-radius: 100px;
     max-width: 609px;
+    margin-left: auto;
 }
 
 .main-section-form-inner input {
@@ -318,6 +330,7 @@ p.text {
     color: var(--color-white);
     transition: var(--transition);
     cursor: pointer;
+    white-space: nowrap;
 }
 .primary-button.long {
     width: 100%;
