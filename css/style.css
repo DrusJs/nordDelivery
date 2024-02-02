@@ -122,6 +122,9 @@
     margin: 0 auto;
     padding: 0 50px;
 }
+.container.relative {
+    position: relative;
+}
 
 h1.title {
     font-family: var(--font-family-primary);
@@ -339,6 +342,10 @@ p.text {
     margin-top: 55px;
 }
 
+.accessible-section .container.relative {
+    padding: 75px 740px 0 50px;
+}
+
 .form-vacancy-section {
     margin-top: 55px;
     padding: 60px 0;
@@ -349,8 +356,26 @@ p.text {
     border-radius: 100px;
     position: relative;
 }
+.form-vacancy-section.bg {
+    background-image: url(../images/from-vacancy-bg2.png);
+
+}
 .form-vacancy-section h3.title {
     color: var(--color-white);
+}
+.drive-bonus-section {
+    background-image: url(../images/gradient-silver-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+}
+.busines-section {
+    background-image: url(../images/businessman-looking-bg.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100px;
 }
 
 .section-title {
@@ -760,13 +785,64 @@ p.text {
     margin-top: 20px;
 }
 
+.top-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 670px;
+}
+.bg-pen-block {
+    position: relative;
+    left: -450px;
+}
+
+.steps-flex {
+    display: flex;
+    gap: 20px;
+}
+
 .footer {
     flex-shrink: 0;
+    background-image: url(../images/footer-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 -200px 0 #000;
+    color: var(--color-white);
+    padding: 60px 0;
+}
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.footer-list__item {
+    padding-bottom: 20px;
+
+}
+.footer-list__item a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.social-links-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 172px;
+    gap: 10px 10px;
+    margin-top: 35px;
 }
 
 .primary-button {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: fit-content;
     border: none;
     outline: none;
@@ -784,7 +860,6 @@ p.text {
 }
 .primary-button.long {
     width: 100%;
-    justify-content: center;
 }
 .primary-button.border {
     background-color: var(--color-white);
@@ -801,6 +876,9 @@ p.text {
     background-repeat: no-repeat;
     background-size: contain;
     margin-left: 20px;
+}
+.primary-button.arrow-hide::after {
+    display: none;
 }
 .primary-button.border::after {
     display: none;
