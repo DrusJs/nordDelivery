@@ -325,9 +325,17 @@ p.text {
 
 .delivery-section {
     margin-top: 113px;
+    background-image: url(../images/move-bg.png);
+    background-position: center left -250px;
+    background-size: 450px;
+    background-repeat: no-repeat;
 }
 .picker-section {
     margin-top: 70px;
+    background-image: url(../images/cart-bg.png);
+    background-position: center left -250px;
+    background-size: 450px;
+    background-repeat: no-repeat;
 }
 .vacancy-section {
     margin-top: 90px;
@@ -341,6 +349,10 @@ p.text {
 }
 .show-section {
     margin-top: 55px;
+    background-image: url(../images/show-bg.png);
+    background-position: top 0 left -150px;
+    background-size: 370px;
+    background-repeat: no-repeat;
 }
 .drive-bonus-section {
     margin-top: 60px;
@@ -365,6 +377,10 @@ p.text {
 }
 .cases-section {
     margin-top: 60px;
+    background-image: url(../images/cases-bg.png);
+    background-position: top right;
+    background-size: 460px;
+    background-repeat: no-repeat;
 }
 
 .form-vacancy-section {
