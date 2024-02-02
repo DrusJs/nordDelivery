@@ -364,8 +364,8 @@ p.text {
 .faq-section {
     margin-top: 60px;
     background-image: url(../images/faq-left-bg.png), url(../images/faq-right-bg.png);
-    background-position: center left, center right;
-    background-size: contain, contain;
+    background-position: top 30px left, top 30px right;
+    background-size: 200px, 200px;
     background-repeat: no-repeat, no-repeat;
 }
 .review-section {
