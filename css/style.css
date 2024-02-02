@@ -694,6 +694,7 @@ p.text {
     color: var(--color-black);
     padding: 10px 17px;
     height: 67px;
+    max-width: 325px;
 }
 .vacancy-card .primary-button {
     margin-left: auto;
