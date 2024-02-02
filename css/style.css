@@ -94,6 +94,7 @@
     --color-red: #E80000;
     --gradient-bg: radial-gradient(farthest-side at 52.6% 50.48%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%), #131313;
     --box-shadow-primary: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    --box-shadow-swiper: 0px 20px 40px 0px rgba(0, 0, 0, 0.15);
     --font-family-primary: "TacticSansExd";
     --font-family-button: "RobotoCondensedBold";
     --transition: 260ms ease-in-out;
@@ -368,7 +369,7 @@ p.text {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 100px;
+    border-radius: 100px 100px 0 0;
 }
 .busines-section {
     background-image: url(../images/businessman-looking-bg.png);
@@ -513,7 +514,7 @@ p.text {
     text-transform: uppercase;
     width: fit-content;
 }
-.scroll-title .top-title {
+.scroll-title .top-title, .line-title {
     gap: 16px;
     display: flex;
     align-items: center;
@@ -523,7 +524,11 @@ p.text {
     color: #666666;
     font-size: 18px;
 }
-.scroll-title .top-title::before {
+
+.line-title {
+    text-transform: uppercase;
+}
+.scroll-title .top-title::before, .line-title::before {
     content: '';
     display: inline-block;
     width: 27px;
@@ -799,6 +804,81 @@ p.text {
 .steps-flex {
     display: flex;
     gap: 20px;
+}
+.swiper-cases {
+    background-color: var(--color-white);
+    border-radius: 0 100px 100px 100px;
+    box-shadow: var(--box-shadow-swiper);
+    padding: 48px 75px 0;
+    height: fit-content;
+}
+.swiper-cases .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper-button-prev, .swiper-button-next {
+    width: 46px;
+    height: 46px;
+    border: 1px solid var(--color-red);
+    border-radius: 4px;
+    background-color: var(--color-red);
+    transition: var(--transition);
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+    background-color: #C50000;
+}
+.swiper-button-prev::after, .swiper-button-next::after {
+    content: '';
+    width: 14px;
+    height: 13px;
+    background-image: url(../images/icons/arrow-button.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.swiper-button-prev::after {
+    transform: rotate(180deg);
+}
+.slide-cases-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.swiper-cases .primary-button {
+    margin-left: 60px;
+}
+.swiper-cases .line-title {
+    margin-left: 18px;
+}
+
+.slide-item .title {
+    color: #828282;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding-left: 60px;
+}
+.slide-item .text, .result {
+    color: var(--color-black);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 60px;
+    font-size: 18px;
+}
+.before-block {
+    color: var(--color-white);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: var(--color-red);
+    border-radius: 0 20px 20px 0;
+    padding: 4px 10px 4px 50px;
+    width: fit-content;
+    letter-spacing: 2px;
 }
 
 .footer {
