@@ -405,6 +405,7 @@ p.text {
     position: relative;
     z-index: 1;
 }
+
 .drive-bonus-section {
     background-image: url(../images/gradient-silver-bg.jpg);
     background-position: center center;
@@ -830,7 +831,8 @@ p.text {
     z-index: -1;
 }
 .form-vacancy {
-    width: fit-content;
+    width: 100%;
+    max-width: 850px;
     margin-top: 116px;
 }
 .form-vacancy .primary-button {
