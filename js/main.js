@@ -8,9 +8,10 @@ const swiperCases = new Swiper('.swiper-cases', {
     },
 
 });
-const swiperReviews = new Swiper('.swiper-reviews', {
+const swiperReviews = new Swiper('.swiper-review', {
     loop: true,
-    spaceBetween: 200,
+    spaceBetween: 18,
+    slidesPerView: 'auto',
 
     navigation: {
       nextEl: '.swiper-button-next',
