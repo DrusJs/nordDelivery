@@ -378,6 +378,10 @@ p.text {
 .form-vacancy-section h3.title {
     color: var(--color-white);
 }
+.form-vacancy-section .container {
+    position: relative;
+    z-index: 1;
+}
 .drive-bonus-section {
     background-image: url(../images/gradient-silver-bg.jpg);
     background-position: center center;
@@ -561,9 +565,11 @@ p.text {
 .scroll-wrapper {
     display: flex;
     align-items: center;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 0px 20px;
     /* overflow-x: scroll; */
     width: 100%;
+    margin-bottom: 60px;
 }
 
 .scroll-vacancy {
@@ -571,12 +577,12 @@ p.text {
     background-color: var(--color-white);
     border-radius: 25px;
     padding: 17px 0;
-    margin: 30px 0 60px;
+    margin: 30px 0 0px;
     min-width: 256px;
     width: 256px;
 }
 .scroll-store {
-    margin: 30px 0 40px;
+    margin: 30px 0 0px;
 
 }
 .vacancy-wage {
@@ -830,6 +836,10 @@ p.text {
     padding: 48px 75px 0;
     height: fit-content;
 }
+.preview {
+    width: 100%;
+    max-width: 500px;
+}
 .swiper-cases .swiper-slide {
     display: flex;
     align-items: center;
@@ -867,6 +877,7 @@ p.text {
 
 .swiper-cases .primary-button {
     margin-left: 60px;
+    margin-bottom: 20px;
 }
 .swiper-cases .line-title {
     margin-left: 18px;
@@ -983,6 +994,8 @@ p.text {
 .footer-flex {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px 30px;
 }
 .footer-list {
     list-style: none;
@@ -1070,6 +1083,9 @@ p.text {
     outline: none;
     border-radius: 25px;
     padding: 12px 30px;
+    width: 100%;
+    max-width: 280px;
+    margin-bottom: 10px;
 }
 .primary-input::placeholder {
     color: var(--color-white);
@@ -1109,4 +1125,43 @@ p.text {
 .hide-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
+}
+
+
+@media (max-width: 1199px) {
+    .accordions-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .accordions-grid .accordion.order {
+        order: 1;
+    }
+    .swiper-cases .swiper-slide {
+        flex-direction: column;
+    }
+    .swiper-cases .primary-button {
+        margin: 0 auto 20px;
+    }
+
+}
+@media (max-width: 799px) {
+    .container {
+        padding: 0 20px;
+    }
+    .main-section-cards {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .slide-item .text, .result, .slide-item .title {
+        padding: 0  20px;
+        text-align: center;
+    }
+    .before-block {
+        border-radius: 20px;
+        padding: 4px 10px;
+        margin: 0 auto
+    }
+    .line-title {
+        margin-top: 20px;
+    }
 }
