@@ -357,9 +357,20 @@ p.text {
 .drive-bonus-section {
     margin-top: 60px;
     padding:  40px 0;
+    background-image: url(../images/gradient-silver-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100px 100px 0 0;
 }
 .busines-section {
     margin-top: 60px;
+    padding: 60px 0;
+    background-image: url(../images/businessman-looking.png), url(../images/businessman-looking-bg.png);
+    background-position: bottom 0 right 0px, center center;
+    background-size: 55%, cover;
+    background-repeat: no-repeat, no-repeat;
+    border-radius: 100px;
 }
 .faq-section {
     margin-top: 60px;
@@ -373,7 +384,17 @@ p.text {
 }
 
 .accessible-section .container.relative {
-    padding: 75px 740px 0 50px;
+    padding: 75px 680px 0 50px;
+    margin-top: 0;
+}
+.accessible-section .container { 
+    margin-top: 70px;
+}
+.accessible-section .container .scroll-title {
+    margin-bottom: 30px;
+}
+.accessible-section .container .market-title {
+    margin-bottom: 40px;
 }
 .cases-section {
     margin-top: 60px;
@@ -406,20 +427,6 @@ p.text {
     z-index: 1;
 }
 
-.drive-bonus-section {
-    background-image: url(../images/gradient-silver-bg.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 100px 100px 0 0;
-}
-.busines-section {
-    background-image: url(../images/businessman-looking-bg.png);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 100px;
-}
 
 .section-title {
     background-color: var(--color-dark-bg);
@@ -850,10 +857,14 @@ p.text {
     position: relative;
     left: -450px;
 }
+.documents-list .market-point {
+    margin-top: 14px;
+}
 
 .steps-flex {
     display: flex;
     gap: 20px;
+    margin-bottom: 20px;
 }
 .step-item {
     width: 100%;
@@ -1003,6 +1014,38 @@ p.text {
     width: fit-content;
     letter-spacing: 2px;
 }
+
+.busines-section .text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: var(--color-black);
+    margin: 40px 0;
+    max-width: 700px;
+}
+.exp-row {
+    display: flex;
+    gap: 100px;
+    border-bottom: 1px solid var(--color-black);
+    max-width: 662px;
+}
+.exp-row .block {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family-primary);
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+.busines-section .exp-row:nth-child(3) .block {
+    margin-top: 0;
+}
+.exp-row .block .large {
+    font-size: 48px;
+    white-space: nowrap;
+}
+
 
 .accordions-grid {
     display: grid;
