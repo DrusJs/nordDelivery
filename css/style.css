@@ -196,9 +196,6 @@ p.text {
     overflow: hidden;
 }
 
-.header-link-list__item {
-
-}
 .header-link-list__item a {
     text-transform: uppercase;
     white-space: nowrap;
@@ -309,7 +306,7 @@ p.text {
 }
 
 .main-section-form-inner input {
-    background-color: transparent;
+    background-color: #383838;
     border: none;
     outline: none;
     font-family: var(--font-family-input);
@@ -635,6 +632,7 @@ p.text {
     align-items: center;
     gap: 20px 20px;
     overflow-x: scroll;
+    overflow-y: hidden;
     padding-bottom: 10px;
     width: 100%;
     margin-bottom: 50px;
@@ -1734,6 +1732,10 @@ p.text {
         width: 100%;
         max-width: none;
     }
+    .primary-button {
+        min-width: auto !important;
+        width: 100%;
+    }
     
     .primary-input {
         width: 100%;
@@ -1752,6 +1754,19 @@ p.text {
         white-space: nowrap;
         margin-left: -30px;
     }
+    .section-box-info, .fire .section-box-info {
+        background-image: none;
+        flex-direction: column;
+        gap: 20px;
+        background-color: #EAEAEA;
+        padding: 14px 0;
+        text-align: center;
+    }
+    .section-box-info::before {
+        left: auto;
+        right: -30px;
+        width: 100vw;
+    }
 
 
     .modal.bg-accept, .modal.bg-form {
@@ -1760,6 +1775,20 @@ p.text {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
+    }
+    .main-section-form {
+        border-radius: 0;
+        margin-right: 0;
+    }
+    .main-section-form-inner {
+        flex-direction: column;
+        background-color: transparent;
+    }
+
+    .main-section-cards {
+        margin-left: -30px;
+        width: 100vw;
+        padding: 20px;
     }
 
 
@@ -1779,6 +1808,24 @@ p.text {
     }
     .header-phone .absolute {
         display: none;
+    }
+    .main-section-text p:last-child {
+        align-self: flex-start;
+    }
+    .main-section-text {
+        white-space: normal;
+    }
+    .main-section-text .large {
+        font-size: 32px;
+    }
+    .back-text {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 599px) {
+    h3.title, .back-text {
+        font-size: 24px;
     }
     
 }
