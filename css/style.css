@@ -1656,6 +1656,7 @@ p.text {
     }
     .accessible-section .container.relative {
         padding-right: 0px;
+        padding-left: 30px;
     }
     .form-vacancy-absolute {
         display: none;
@@ -1695,8 +1696,12 @@ p.text {
         margin-top: 30px;
         background-image: none;
     }
+    .cases-section {
+        background-image: none;
+    }
     .form-vacancy-section {
         border-radius: 0;
+        padding: 10px 0 40px;
     }
     .section-box {
         border-radius: 0;
@@ -1707,14 +1712,21 @@ p.text {
     .section-box {
         padding: 40px 30px;
     }
+    .faq-section {
+        background-position: top 50px left, top 50px right;
+    }
     .scroll-wrapper {
-        margin: 0 0 0 -30px;
-        padding: 0 20px;
-        width: 100vw;
+        margin: 0 0 30px -30px;
+        padding: 0px 20px 10px;
+        width: calc(100vw + 30px);
+    }
+    .social-links-list {
+        gap: 20px 24px;
+        width: 230px;
     }
     .scroll-wrapper.vacancy {
         margin: 40px 0 40px -30px;
-        width: 100vw;
+        width: calc(100vw + 30px);
     }
     .market__item {
         width: 140px;
@@ -1750,12 +1762,23 @@ p.text {
         max-width: none;
     }
     .drive-item {
-        border-radius: 0;
+        border-radius: 30px 0 0 30px;
         padding-left: 10px;
+        gap: 12px;
+    }
+    .accordion.active .accordion-dropdown {
+        padding: 20px 20px 5px;
     }
     .exp-row {
         flex-direction: column;
         gap: 20px;
+        border: none;
+    }
+    .exp-row .block {
+        padding-bottom: 15px;
+        margin-top: 15px;
+        border-bottom: 1px solid var(--color-black);
+        width: 100%;
     }
     .scroll-title .top-title, .line-title {
         font-size: 16px;
@@ -1766,14 +1789,18 @@ p.text {
         background-image: none;
         flex-direction: column;
         gap: 20px;
-        background-color: #EAEAEA;
-        padding: 14px 0;
+        background-color: transparent;
+        padding: 0;
         text-align: center;
     }
+    .section-box-info .text {
+        font-size: 0px;
+    }
     .section-box-info::before {
+        display: none;
         left: auto;
         right: -30px;
-        width: 100vw;
+        width: calc(100vw + 30px);
     }
 
 
@@ -1804,6 +1831,7 @@ p.text {
     .main-section-cards__item {
         border-radius: 50px;
         width: 100%;
+        padding: 20px 30px;
     }
     .swiper-cases {
         padding: 30px 20px 0;
@@ -1842,6 +1870,12 @@ p.text {
     }
     .back-text {
         font-size: 28px;
+    }
+    .drive-item .title {
+        line-height: 24px;
+    }
+    .drive-item .text {
+        margin-top: 6px;
     }
 
     /*test*/
@@ -1887,5 +1921,19 @@ p.text {
     .container {
         padding: 0 18px;
     }
-    
+    .accessible-section .container.relative {
+        padding-left: 18px;
+    }
+    .scroll-title .top-title, .line-title {
+        font-size: 15px;
+    }
+    .scroll-wrapper {
+        margin: 0 0 30px -18px;
+        padding: 0px 20px 10px;
+        width: calc(100vw + 18px);
+    }
+    .scroll-wrapper.vacancy {
+        margin: 40px 0 40px -18px;
+        width: calc(100vw + 18px);
+    }
 }
