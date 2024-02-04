@@ -193,6 +193,7 @@ p.text {
     font-size: 13px;
     font-weight: bold;
     line-height: 20.8px;
+    letter-spacing: 0.4px;
 }
 
 .header-panel {
@@ -212,7 +213,7 @@ p.text {
 .header-phone .absolute {
     position: absolute;
     top: -20px;
-    left: -50px;
+    left: -31px;
     width: 700px;
     z-index: -1;
 }
@@ -242,7 +243,7 @@ p.text {
     flex: 1 0 auto;
 }
 .main-section {
-    margin-top: 142px;
+    margin-top: 111px;
 }
 .main-section .wd {
     max-width: 672px;
@@ -324,24 +325,24 @@ p.text {
 }
 
 .delivery-section {
-    margin-top: 113px;
+    margin-top: 102px;
     background-image: url(../images/move-bg.png);
-    background-position: center left -250px;
-    background-size: 450px;
+    background-position: bottom 270px left -250px;
+    background-size: 500px;
     background-repeat: no-repeat;
 }
 .picker-section {
-    margin-top: 70px;
+    margin-top: 68px;
     background-image: url(../images/cart-bg.png);
-    background-position: center left -250px;
-    background-size: 450px;
+    background-position: bottom 170px left -175px;
+    background-size: 400px;
     background-repeat: no-repeat;
 }
 .vacancy-section {
     margin-top: 90px;
 }
 .market-section {
-    margin-top: 90px;
+    margin-top: 55px;
     background-image: url(../images/market-bg.png);
     background-position: bottom right;
     background-size: 541px;
@@ -388,7 +389,7 @@ p.text {
     margin-top: 0;
 }
 .accessible-section .container { 
-    margin-top: 70px;
+    margin-top: 110px;
 }
 .accessible-section .container .scroll-title {
     margin-bottom: 30px;
@@ -426,6 +427,10 @@ p.text {
     position: relative;
     z-index: 1;
 }
+.form-vacancy-section .primary-button {
+    width: 100%;
+    max-width: 314px;
+}
 
 
 .section-title {
@@ -436,7 +441,7 @@ p.text {
     font-size: 36px;
     text-transform: uppercase;
     border-radius: 0 100px 100px 0;
-    padding: 10px 20px;
+    padding: 10px 20px 10px 0;
     width: fit-content;
     position: relative;
     z-index: 1;
@@ -459,11 +464,11 @@ p.text {
     font-size: 32px;
     text-transform: uppercase;
     width: fit-content;
-    margin-top: 14px;
+    margin-top: 5px;
 }
 
 .section-box {
-    padding: 60px 120px 100px;
+    padding: 64px 120px 54px;
     background-image: url(../images/section-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -475,14 +480,17 @@ p.text {
     position: relative;
     border-radius: 0 250px 250px 250px;
 }
+.section-box .container {
+    padding: 0;
+}
 .section-box.fire {
     background-image: url(../images/section-bg2.png);
 
 }
 .section-box .absolute {
-    bottom: -100px;
+    bottom: -96px;
     position: absolute;
-    right: 100px;
+    right: 56px;
     width: 600px;
     z-index: 2;
 }
@@ -495,6 +503,7 @@ p.text {
     font-size: 24px;
     color: var(--color-white);
     max-width: 672px;
+    line-height: 1.4;
 }
 .fire .section-box-text {
     max-width: 800px;
@@ -509,7 +518,7 @@ p.text {
     color: var(--color-white);
     display: flex;
     align-items: center;
-    margin-bottom: 21px;
+    margin-bottom: 24px;
 }
 .section-box-list__item::before {
     content: '';
@@ -535,7 +544,7 @@ p.text {
     justify-content: space-between;
     align-items: center;
     padding: 14px 19px 12px 0;
-    margin-top: 46px;
+    margin-top: 40px;
 }
 .fire .section-box-info {
     max-width: 840px;
@@ -600,7 +609,10 @@ p.text {
     gap: 0px 20px;
     /* overflow-x: scroll; */
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+}
+.scroll-wrapper.low {
+    margin-bottom: 40px;
 }
 
 .scroll-vacancy {
@@ -758,6 +770,7 @@ p.text {
     height: fit-content;
     width: 100%;
     max-width: 555px;
+    margin: 90px 0 0 auto;
 }
 .show-block .text {
     font-family: Arial, Helvetica, sans-serif;
@@ -802,6 +815,7 @@ p.text {
     font-size: 18px;
     color: var(--color-black);
     margin-top: 30px;
+    text-transform: uppercase;
 }
 
 .form-vacancy-absolute {
@@ -850,12 +864,13 @@ p.text {
 .top-bg {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 50px;
     width: 670px;
 }
 .bg-pen-block {
     position: relative;
-    left: -450px;
+    left: -420px;
+    height: 117px;
 }
 .documents-list .market-point {
     margin-top: 14px;
@@ -1156,7 +1171,7 @@ p.text {
    
 }
 .swiper.swiper-review {
-    padding-top: 170px;
+    padding-top: 130px;
 }
 .swiper-review .preview {
     width: 125px;
@@ -1179,7 +1194,7 @@ p.text {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #626262;
-    min-height: 144px;
+    min-height: 210px;
 }
 
 .swiper-review .swiper-slide .rating {
@@ -1358,7 +1373,7 @@ p.text {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    border-bottom: 4px solid var(--color-white);
+    border-bottom: 6px solid var(--color-white);
 }
 
 .modal.bg-form {
@@ -1426,6 +1441,9 @@ p.text {
     letter-spacing: 2px;
     line-height: 36px;
 }
+.modal h3.title.light.sm {
+    font-size: 20px;
+}
 .modal .back-text {
     margin: 0 0 25px;
 }
@@ -1434,6 +1452,11 @@ p.text {
     font-size: 20px;
     text-align: center;
     width: 100%;
+    text-transform: none;
+}
+.modal .title.sm {
+    font-size: 24px;
+    text-transform: none;
 }
 .modal .social-links-list {
     width: 208px;
@@ -1464,6 +1487,20 @@ p.text {
 }
 .m-auto {
     margin: 0 auto;
+}
+.ta-right {
+    text-align: right;
+    margin-left: 526px;
+}
+.large-gradient {
+    line-height: 0px;
+    font-size: 96px;
+    font-family: var(--font-family-primary);
+    font-weight: bold;
+    font-style: italic;
+    background: linear-gradient(180deg, var(--color-red) 10%, var(--color-black));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hide-scrollbar::-webkit-scrollbar {
