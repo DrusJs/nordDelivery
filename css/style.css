@@ -1798,6 +1798,11 @@ p.text {
         border-radius: 50px;
         width: 100%;
     }
+    .swiper-cases {
+        padding: 30px 20px 0;
+        border-radius: 0 30px 30px 30px;
+    }
+
 
 
 
