@@ -84,6 +84,12 @@
     font-weight: bold;
     src: url("../fonts/RobotoCondensed-Bold.ttf") format('truetype');
 }
+@font-face {
+    font-family: "RobotoCondensed";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/RobotoCondensed-Regular.ttf") format('truetype');
+}
 
 :root {
     --color-white: #FFFFFF;
@@ -97,6 +103,7 @@
     --box-shadow-swiper: 0px 20px 40px 0px rgba(0, 0, 0, 0.15);
     --font-family-primary: "TacticSansExd";
     --font-family-button: "RobotoCondensedBold";
+    --font-family-input: "RobotoCondensed";
     --transition: 260ms ease-in-out;
 }
 
@@ -106,6 +113,10 @@
     padding: 0;
 }
 
+
+body.no-scroll {
+    overflow: hidden;
+}
 
 .wrapper {
     display: flex;
@@ -297,10 +308,17 @@ p.text {
     background-color: transparent;
     border: none;
     outline: none;
-    font-family: var(--font-family-button);
+    font-family: var(--font-family-input);
     font-size: 18px;
     color: var(--color-white);
     letter-spacing: 1.8px; 
+}
+.main-section-form-inner input::placeholder {
+    opacity: 1;
+    color: var(--color-white);
+}
+.main-section-form-inner input:focus::placeholder {
+    opacity: 0;
 }
 
 .main-section-cards {
@@ -770,7 +788,7 @@ p.text {
     height: fit-content;
     width: 100%;
     max-width: 555px;
-    margin: 90px 0 0 auto;
+    margin-top: 90px;
 }
 .show-block .text {
     font-family: Arial, Helvetica, sans-serif;
@@ -1317,7 +1335,7 @@ p.text {
 .primary-input {
     background-color: #383838;
     color: var(--color-white);
-    font-family: var(--font-family-button);
+    font-family: var(--font-family-input);
     font-size: 18px;
     border: none;
     outline: none;
@@ -1330,7 +1348,6 @@ p.text {
 .primary-input::placeholder {
     color: var(--color-white);
     opacity: 1;
-
 }
 .primary-input:focus::placeholder {
     opacity: 0;
@@ -1365,6 +1382,10 @@ p.text {
     position: relative;
     border-radius: 20px;
     background-color: var(--color-white);
+}
+.modal.policy {
+    padding: 60px 0px 120px;
+    max-width: 1600px;
 }
 .modal.bg {
     border-radius: 100px;
@@ -1465,6 +1486,62 @@ p.text {
 .modal a {
     text-decoration: none;
 }
+.modal .modal-head {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--color-black);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 80px 50px;
+    border-bottom: 1px solid #CED6E1;
+}
+.modal .overflow-block {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: calc(90vh - 260px);
+    padding: 10px 10px;
+    margin: 20px 70px;
+    scrollbar-color: #222 transparent;
+    scrollbar-width: thin;
+}
+.modal .overflow-block::-webkit-scrollbar {
+    width: 6px;
+}
+  
+.modal .overflow-block::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 6px;
+
+}
+  
+.modal .overflow-block::-webkit-scrollbar-thumb {
+    background-color: #222;
+    border-radius: 6px;
+}
+
+
+.modal .policy-list {
+    list-style: none;
+    margin-top: 40px;
+}
+.modal .policy-list.no-margin {
+    margin-top: 0px;
+}
+.modal .policy-list .head {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--color-black);
+    margin-bottom: 20px;
+}
+.modal .policy-list .text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: var(--color-black);
+    margin-bottom: 20px;
+}
+
 
 .c-red {
     color: var(--color-red);
@@ -1487,6 +1564,9 @@ p.text {
 }
 .m-auto {
     margin: 0 auto;
+}
+.ml-auto {
+    margin-left: auto;
 }
 .ta-right {
     text-align: right;
