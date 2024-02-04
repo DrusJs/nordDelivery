@@ -1623,7 +1623,9 @@ p.text {
     .swiper-cases .primary-button {
         margin: 0 auto 20px;
     }
-
+    .header-phone .absolute {
+        display: none;
+    }
 }
 
 @media (max-width: 899px) {
@@ -1742,6 +1744,16 @@ p.text {
     }
     .accordion .accordion-head .head {
         font-size: 14px;
+        padding-right: 0;
+    }
+    .accordion .accordion-head {
+        height: auto;
+        gap: 14px;
+    }
+    .accordion .accordion-head .action-item {
+        width: 35px;
+        height: 35px;
+        min-width: 35px;
     }
     .form-vacancy {
         display: flex;
@@ -1802,8 +1814,19 @@ p.text {
         right: -30px;
         width: calc(100vw + 30px);
     }
-
-
+    .modal .overflow-block {
+        max-height: calc(100vh - 160px);
+        padding: 10px 10px;
+        margin: 20px 10px;
+        scrollbar-color: #222 transparent;
+        scrollbar-width: thin;
+    }
+    .modal .modal-head {
+        padding: 0 30px 30px;
+    }
+    .modal.policy {
+        padding-top: 30px;
+    }
     .modal.bg-accept, .modal.bg-form {
         background-image:  url(../images/from-vacancy-bg2.png);
         background-color: var(--color-black);
@@ -1920,6 +1943,7 @@ p.text {
         align-items: center;
         padding-left: 18px;
         width: 100vw;
+        z-index: 3;
         background-color: #131313;
         color: var(--color-white);
     }
@@ -1936,6 +1960,7 @@ p.text {
     }
     .header-phone-number a {
         color: var(--color-white);
+        white-space: nowrap;
     }
     .main-section {
         margin-top: 45px;
@@ -1956,6 +1981,8 @@ p.text {
     .mobile-main {
         display: block;
         width: 100%;
+        margin: 0 auto;
+        max-width: 500px;
     }
 }
 
@@ -1984,5 +2011,11 @@ p.text {
     .scroll-wrapper.vacancy {
         margin: 40px 0 40px -18px;
         width: calc(100vw + 18px);
+    }
+    .faq-section {
+        background-image: none;
+    }
+    .header-phone .primary-button {
+        width: 45%;
     }
 }
