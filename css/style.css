@@ -1789,9 +1789,14 @@ p.text {
     }
 
     .main-section-cards {
-        margin-left: -30px;
-        width: 100vw;
-        padding: 20px;
+        padding: 20px 0;
+        overflow: visible;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .main-section-cards__item {
+        border-radius: 50px;
+        width: 100%;
     }
 
 
