@@ -1853,6 +1853,7 @@ p.text {
     }
     .mobile-main {
         display: block;
+        width: 100%;
     }
 }
 
