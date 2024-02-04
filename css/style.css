@@ -1662,6 +1662,23 @@ p.text {
         background-repeat: no-repeat;
         border-radius: 0;
     }
+    .delivery-section {
+        margin-top: 102px;
+        background-image: none;
+
+    }
+    .picker-section {
+        margin-top: 68px;
+        background-image: none;
+    }
+    .market-section {
+        margin-top: 55px;
+        background-image: none;
+    }
+    .show-section {
+        margin-top: 55px;
+        background-image: none;
+    }
     .form-vacancy-section {
         border-radius: 0;
     }
@@ -1671,4 +1688,70 @@ p.text {
     .section-box .absolute {
         display: none;
     }
+    .section-box {
+        padding: 40px 30px;
+    }
+    .scroll-wrapper {
+        margin: 0 0 0 -30px;
+        padding: 0 20px;
+        width: 100vw;
+    }
+    .market__item {
+        width: 140px;
+    }
+    .market-logo {
+        height: 120px;
+    }
+    .market-logo img {
+        width: 100%;
+    }
+    .drive-flex {
+        grid-template-columns: 1fr;
+    }
+    .accordion .accordion-head .head {
+        font-size: 14px;
+    }
+    .form-vacancy {
+        display: flex;
+        flex-direction: column;
+    }
+    .primary-input {
+        width: 100%;
+        max-width: none;
+    }
+    .drive-item {
+        border-radius: 0;
+        padding-left: 10px;
+    }
+    .exp-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .scroll-title .top-title, .line-title {
+        font-size: 16px;
+        white-space: nowrap;
+        margin-left: -30px;
+    }
+
+
+    .modal.bg-accept, .modal.bg-form {
+        background-image:  url(../images/from-vacancy-bg2.png);
+        background-color: var(--color-black);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+
+
+
+
+
+
+
+
+    .show-block img {
+        display: none;
+    }
+    
 }
