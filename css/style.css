@@ -193,6 +193,7 @@ p.text {
     display: flex;
     gap: 20px;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .header-link-list__item {
@@ -1623,6 +1624,15 @@ p.text {
     .container {
         padding: 0 30px;
     }
+    .header-panel {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .header-phone {
+        flex-direction: column;
+        margin-right: 0;
+        align-items: flex-start;
+    }
     .slide-item .text, .result, .slide-item .title {
         padding: 0  20px;
         text-align: center;
@@ -1696,11 +1706,15 @@ p.text {
         padding: 0 20px;
         width: 100vw;
     }
+    .scroll-wrapper.vacancy {
+        margin: 40px 0 40px -30px;
+        width: 100vw;
+    }
     .market__item {
         width: 140px;
     }
     .market-logo {
-        height: 120px;
+        height: 140px;
     }
     .market-logo img {
         width: 100%;
@@ -1714,7 +1728,13 @@ p.text {
     .form-vacancy {
         display: flex;
         flex-direction: column;
+        margin-top: 50px;
     }
+    .form-vacancy .primary-button {
+        width: 100%;
+        max-width: none;
+    }
+    
     .primary-input {
         width: 100%;
         max-width: none;
@@ -1747,9 +1767,13 @@ p.text {
 
 
 
+    .ta-right {
+        margin-left: 0;
+    }
 
-
-
+    .show-block .info {
+        margin: 30px 0 0 0 !important;
+    }
     .show-block img {
         display: none;
     }
