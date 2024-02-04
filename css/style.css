@@ -1753,5 +1753,8 @@ p.text {
     .show-block img {
         display: none;
     }
+    .header-phone .absolute {
+        display: none;
+    }
     
 }
