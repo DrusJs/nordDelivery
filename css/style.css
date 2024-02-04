@@ -1821,11 +1821,45 @@ p.text {
     .back-text {
         font-size: 28px;
     }
+
+    /*test*/
+    .wrapper {
+        background-image: none;
+    }
+    .header-inner {
+        display: none;
+    }
+    .header-phone {
+        display: none;
+    }
+    .main-section {
+        margin-top: 45px;
+    }
+    .header-panel {
+        padding-top: 54px;
+    }
+    .main-section-text p:first-child {
+        margin-bottom: 12px;
+    }
+    .main-section-text p:last-child {
+        margin-top: 20px;
+    }
+    .main-section .wd {
+        font-size: 16px;
+        line-height: 1.8;
+    }
 }
 
 @media (max-width: 599px) {
+    h1.title {
+        font-size: 32px;
+        line-height: 1.25;
+    }
     h3.title, .back-text {
         font-size: 24px;
+    }
+    .container {
+        padding: 0 18px;
     }
     
 }
