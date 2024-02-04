@@ -328,8 +328,10 @@ p.text {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    overflow: auto;
     gap: 12px;
-    margin-top: 90px;
+    margin-top: 70px;
+    padding: 20px 0;
 }
 .main-section-cards__item {
     display: flex;
@@ -341,8 +343,9 @@ p.text {
     padding: 20px 10px;
     box-shadow: var(--box-shadow-primary);
     border-radius: 100px;
-    max-width: 325px;
-    width: 100%;
+    width: 325px;
+    min-width: 325px;
+    gap: 20px;
 }
 
 .delivery-section {
@@ -573,13 +576,16 @@ p.text {
 }
 .section-box-info::before {
     content: '';
-    background-color: #E8E8E8;
+    background-color: #EAEAEA;
     width: 200px;
     height: 100%;
     left: -195px;
     z-index: -1;
     top: 0;
     position: absolute;
+}
+.fire .section-box-info::before {
+    background-color: #F7F7F7;
 }
 .section-box-info .text {
     font-family: Arial, Helvetica, sans-serif;
@@ -626,9 +632,9 @@ p.text {
 .scroll-wrapper {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 0px 20px;
-    /* overflow-x: scroll; */
+    gap: 20px 20px;
+    overflow-x: scroll;
+    padding-bottom: 10px;
     width: 100%;
     margin-bottom: 50px;
 }
@@ -732,8 +738,8 @@ p.text {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     color: var(--color-black);
-    padding: 10px 17px;
-    height: 67px;
+    padding: 10px 17px 0;
+    height: 68px;
     max-width: 325px;
 }
 .vacancy-card .primary-button {
@@ -899,6 +905,7 @@ p.text {
 
 .steps-flex {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     margin-bottom: 20px;
 }
@@ -1611,13 +1618,10 @@ p.text {
     }
 
 }
-@media (max-width: 799px) {
+
+@media (max-width: 899px) {
     .container {
-        padding: 0 20px;
-    }
-    .main-section-cards {
-        flex-wrap: wrap;
-        gap: 20px;
+        padding: 0 30px;
     }
     .slide-item .text, .result, .slide-item .title {
         padding: 0  20px;
@@ -1630,5 +1634,41 @@ p.text {
     }
     .line-title {
         margin-top: 20px;
+    }
+    .top-bg {
+        display: none;
+    }
+    .accessible-section .container.relative {
+        padding-right: 0px;
+    }
+    .form-vacancy-absolute {
+        display: none;
+    }
+    .drive-bonus-section {
+        margin-top: 60px;
+        padding: 40px 0 120px;
+        background-image: url(../images/gradient-silver-bg.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 0;
+    }
+    .busines-section {
+        margin-top: 60px;
+        padding: 60px 0;
+        background-image: url(../images/businessman-looking-bg.png);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 0;
+    }
+    .form-vacancy-section {
+        border-radius: 0;
+    }
+    .section-box {
+        border-radius: 0;
+    }
+    .section-box .absolute {
+        display: none;
     }
 }
