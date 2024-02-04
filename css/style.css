@@ -1837,6 +1837,33 @@ p.text {
         padding: 30px 20px 0;
         border-radius: 0 30px 30px 30px;
     }
+    .modal-wrapper {
+        padding: 0;
+    }
+    .modal, .modal.bg {
+        border-radius: 0;
+        max-height: 100vh;
+        height: 100vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .modal .modal-content {
+        border-radius: 0;
+        overflow: hidden;
+        padding: 60px 18px 20px;
+    }
+    .modal.bg .modal-close {
+        top: 10px;
+        right: 10px;
+    }
+    .modal .form-vacancy {
+        margin-left: 0;
+    }
+    .modal h3.title.light {
+        font-size: 20px;
+        line-height: 24px;
+        text-align: left;
+    }
 
 
 
@@ -1886,13 +1913,35 @@ p.text {
         display: none;
     }
     .header-phone {
+        position: fixed;
+        top: 0;
+        left: 0;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 18px;
+        width: 100vw;
+        background-color: #131313;
+        color: var(--color-white);
+    }
+    .header-phone .primary-button {
+        border-radius: 50px 0 0 50px;
+        width: 50%;
+        margin-left: auto;
+    }
+    .header-phone .primary-button::after {
         display: none;
+    }
+    .header-phone-number .text {
+        display: none;
+    }
+    .header-phone-number a {
+        color: var(--color-white);
     }
     .main-section {
         margin-top: 45px;
     }
     .header-panel {
-        padding-top: 54px;
+        padding-top: 75px;
     }
     .main-section-text p:first-child {
         margin-bottom: 12px;
