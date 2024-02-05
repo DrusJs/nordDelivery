@@ -1693,6 +1693,14 @@ p.text {
     .header-logo {
         width: fit-content;
     }
+    .section-box-list__item {
+        display: inline-block;
+        line-height: 30px;
+    }
+    .section-box-list__item::before {
+        margin-bottom: -6px;
+        margin-right: 10px;
+    }
     .header-inner {
         position: fixed;
         width: 100vw;
@@ -2106,6 +2114,14 @@ p.text {
     h1.title {
         font-size: 32px;
         line-height: 1.25;
+    }
+    .swiper-button-prev, .swiper-button-next {
+        width: 32px;
+        height: 32px;
+    }
+
+    .swiper-review .swiper-button-prev {
+        right: 42px;
     }
     .delivery-section .primary-button,
     .picker-section .primary-button {
