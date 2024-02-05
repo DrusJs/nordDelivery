@@ -2201,7 +2201,7 @@ p.text {
         width: calc(100vw + 18px);
     }
     .scroll-wrapper.vacancy {
-        margin: 0px 0 0px -18px;
+        margin: 0px 0 20px -18px;
         width: calc(100vw + 18px);
     }
     .faq-section {
