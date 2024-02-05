@@ -1221,6 +1221,7 @@ p.text {
     border: 1px solid #D3D3D3;
     position: relative;
     min-height: 315px;
+    background-color: var(--color-white);
 }
 
 .swiper-review .swiper-slide .text {
