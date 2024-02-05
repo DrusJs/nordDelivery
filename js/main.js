@@ -56,6 +56,18 @@ if (document.querySelector('.js-close-modal')) {
     })
 }
 
+document.querySelector('.burger-button').addEventListener('click', function() {
+    document.querySelector('.header-inner').classList.add('active')
+})
+document.querySelector('.burger-close').addEventListener('click', function() {
+    document.querySelector('.header-inner').classList.remove('active')
+})
+document.querySelectorAll('.header-link-list__item a').forEach(link=>{
+    link.addEventListener('click', function(){
+        document.querySelector('.header-inner').classList.remove('active')
+    })
+})
+
 let phoneInput = document.querySelectorAll(".js-phone");
 
 phoneInput.forEach(input=> {
