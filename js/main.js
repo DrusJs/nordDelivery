@@ -84,13 +84,14 @@ phoneInput.forEach(input=> {
 
 
 let blocks = document.querySelectorAll('.fade');
+let delayItem = window.matchMedia("(max-width: 800px)").matches?80:150
 function checkBlocksVisibility() {
     let windowHeight = window.innerHeight;
 
     blocks.forEach(block =>{
         let blockPosition = block.getBoundingClientRect().top;
         
-        if (blockPosition < windowHeight - 150) {
+        if (blockPosition < windowHeight - delayItem) {
             block.style.opacity = "1";
             block.style.transform = "translateY(0)";
         }
