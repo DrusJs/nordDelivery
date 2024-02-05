@@ -113,9 +113,8 @@
     padding: 0;
 }
 
-html, body {
+body {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 body.no-scroll {
@@ -195,7 +194,7 @@ p.text {
     display: flex;
     gap: 20px;
     justify-content: space-between;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .header-link-list__item a {
