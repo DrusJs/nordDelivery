@@ -779,6 +779,10 @@ p.text {
     color: var(--color-black);
     margin-top: 8px;
 }
+.market__item .market-title,
+.market__item .market-point {
+    margin-left: 12px;
+}
 .market-point::before {
     content: '';
     display: inline-block;
@@ -1594,6 +1598,11 @@ p.text {
 .burger-close {
     display: none;
 }
+.fade {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 0.5s, opacity 0.5s;
+}
 
 
 @media (min-width: 987px) {
@@ -1622,11 +1631,12 @@ p.text {
 @media (max-width: 1635px) {
     .header-phone {
         position: static;
+        margin-right: 80px;
     }
     .header-phone .absolute {
         top: 40px;
         right: 0px;
-        width: 43vw;
+        width: 40vw;
         left: auto;
     }
     .main-section-form {
@@ -1651,10 +1661,12 @@ p.text {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }  
-
+    .header-phone {
+        margin-right: 30px;
+      }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1240px) {
     .accordions-grid {
         display: flex;
         flex-direction: column;
@@ -1689,6 +1701,9 @@ p.text {
 @media (max-width: 899px) {
     .container {
         padding: 0 30px;
+    }
+    .section-subtitle {
+        margin-top: 14px;
     }
     .header-logo {
         width: fit-content;
@@ -1806,7 +1821,7 @@ p.text {
 
     }
     .picker-section {
-        margin-top: 30px;
+        margin-top: 50px;
         background-image: none;
     }
     .market-section {
@@ -1824,6 +1839,9 @@ p.text {
         border-radius: 0;
         padding: 10px 0 40px;
     }
+    .form-vacancy-section.mobile {
+        padding: 40px 0;
+    }
     .section-box {
         border-radius: 0;
     }
@@ -1838,7 +1856,7 @@ p.text {
     }
     .scroll-wrapper {
         margin: 0 0 30px -30px;
-        padding: 0px 20px 10px;
+        padding: 0px 20px 20px;
         width: calc(100vw + 30px);
     }
     .social-links-list {
@@ -1915,6 +1933,7 @@ p.text {
         font-size: 16px;
         white-space: nowrap;
         margin-left: 0px;
+        gap: 8px;
     }
     .section-box-info, .fire .section-box-info {
         background-image: none;
@@ -1984,7 +2003,6 @@ p.text {
     }
     .modal, .modal.bg {
         border-radius: 0;
-        max-height: 100vh;
         height: 100vh;
         padding-top: 20px;
         overflow-y: scroll;
@@ -2006,6 +2024,11 @@ p.text {
         font-size: 20px;
         line-height: 24px;
         text-align: left;
+    }
+    .primary-input {
+        padding: 18px 30px;
+        border-radius: 50px;
+        margin-bottom: 20px;
     }
 
 
@@ -2109,6 +2132,18 @@ p.text {
     .picker-section .primary-button {
         width: calc(100% - 40px);
     }
+    .delivery-section .section-box-info .primary-button,
+    .picker-section .section-box-info .primary-button {
+        width: 100%;
+    }
+    .primary-button {
+        padding: 18px 30px;
+        font-size: 20px;
+    }
+    .header-phone .primary-button {
+        padding: 12px 30px;
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 599px) {
@@ -2157,7 +2192,8 @@ p.text {
         background-image: none;
     }
     .header-phone .primary-button {
-        width: 45%;
+        width: 55%;
+        padding-left: 20px;
     }
     .large-gradient {
         line-height: 50px;

@@ -81,3 +81,24 @@ phoneInput.forEach(input=> {
         mask: "+{7}(000)000-00-00",
     });
 })
+
+
+let blocks = document.querySelectorAll('.fade');
+function checkBlocksVisibility() {
+    let windowHeight = window.innerHeight;
+
+    blocks.forEach(block =>{
+        let blockPosition = block.getBoundingClientRect().top;
+        
+        if (blockPosition < windowHeight - 150) {
+            block.style.opacity = "1";
+            block.style.transform = "translateY(0)";
+        }
+    });
+}
+
+checkBlocksVisibility();
+
+window.addEventListener('scroll', function() {
+    checkBlocksVisibility();
+});
