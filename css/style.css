@@ -1600,9 +1600,7 @@ p.text {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-.mobile-main {
-    display: none;
-}
+
 .burger-button {
     display: none;
 }
@@ -2136,12 +2134,6 @@ p.text {
         font-size: 16px;
         line-height: 1.8;
     }
-    .mobile-main {
-        display: block;
-        width: 100%;
-        margin: 0 auto;
-        max-width: 500px;
-    }
     .modal .social-links-list {
         margin-left: 30px;
         flex-wrap: nowrap;
@@ -2199,7 +2191,7 @@ p.text {
     }
     .scroll-wrapper {
         margin: 0 0 30px -18px;
-        padding: 0px 20px 10px;
+        padding: 4px 30px 16px;
         width: calc(100vw + 18px);
     }
     .scroll-wrapper.vacancy {
