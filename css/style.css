@@ -2006,9 +2006,11 @@ p.text {
     .modal, .modal.bg {
         border-radius: 0;
         height: 100vh;
+        max-height: none;
         padding-top: 20px;
         overflow-y: scroll;
         overflow-x: hidden;
+        border-bottom: 0;
     }
     .modal .modal-content {
         border-radius: 0;
