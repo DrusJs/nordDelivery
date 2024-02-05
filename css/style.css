@@ -115,6 +115,7 @@
 
 html, body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body.no-scroll {
@@ -129,6 +130,7 @@ body.no-scroll {
     background-image: url(../images/icons/lines-main-bg.svg), url(../images/main-bg-search.png);
     background-position: center top, left top;
     background-repeat: repeat-y, no-repeat;
+    overflow: hidden;
 }
 
 .container {
@@ -1632,6 +1634,9 @@ p.text {
     }
     .show-block .absolute {        
         right: calc(43vw - 1000px);
+    }  
+    .drive-bonus-section {
+        background-position: bottom 140px left calc(20vw - 400px), center center;
     }
 }
 
@@ -1639,7 +1644,7 @@ p.text {
     .main-section-cards {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
-    }    
+    }  
 
 }
 
@@ -2047,12 +2052,28 @@ p.text {
         margin: 0 auto;
         max-width: 500px;
     }
+    .modal .social-links-list {
+        margin-left: 30px;
+        flex-wrap: nowrap;
+    }
+    .delivery-section .primary-button,
+    .picker-section .primary-button {
+        width: calc(100% - 40px);
+    }
 }
 
 @media (max-width: 599px) {
     h1.title {
         font-size: 32px;
         line-height: 1.25;
+    }
+    .delivery-section .primary-button,
+    .picker-section .primary-button {
+        width: calc(100% - 36px);
+    }
+    .back-text::before {
+        width: 100vw;  
+        right: 50vw;  
     }
     h3.title, .back-text {
         font-size: 24px;
