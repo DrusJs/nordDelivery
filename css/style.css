@@ -404,6 +404,9 @@ p.text {
 .review-section {
     margin: 60px 0 150px;
 }
+.review-section .scroll-title {
+    margin-bottom: 10px;
+}
 
 .accessible-section .container.relative {
     padding: 75px 680px 0 50px;
