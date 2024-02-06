@@ -1733,6 +1733,9 @@ p.text {
         margin-bottom: -6px;
         margin-right: 10px;
     }
+    .section-box-list {
+        margin-top: 40px;
+    }
     .header-inner {
         position: fixed;
         width: 100vw;
