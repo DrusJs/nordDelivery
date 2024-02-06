@@ -167,6 +167,13 @@ h3.title {
 h3.title.light {
     font-weight: 300;
 }
+h3.title.light.little {
+    font-weight: 300;
+    text-transform: none;
+}
+h3.title.light.little .c-red{
+    font-weight: 500;
+}
 .subtitle {
     font-family: var(--font-family-primary);
     font-size: 22px;
@@ -1975,7 +1982,7 @@ p.text {
         scrollbar-width: thin;
     }
     .modal .modal-head {
-        padding: 0 60px 30px;
+        padding: 30px 60px 30px;
     }
     .modal.policy {
         padding-top: 30px;
@@ -2027,8 +2034,8 @@ p.text {
     }
     .modal.policy .modal-close {
         filter: invert(1);
-        top: 10px;
-        right: 10px;
+        top: 30px;
+        right: 16px;
     }
     .modal .modal-content {
         border-radius: 0;
