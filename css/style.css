@@ -1305,6 +1305,11 @@ p.text {
     margin-top: 35px;
 }
 
+.social-links .text {
+    margin-top: 30px;
+    cursor: pointer;
+}
+
 .primary-button {
     display: flex;
     align-items: center;
