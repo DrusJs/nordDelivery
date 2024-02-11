@@ -11,8 +11,6 @@
 
         <title>НордДеливири</title>
     </head>
-
-    <!-- <button class="primary-button"></button> -->
     
     <body>
         <div class="wrapper">
@@ -33,9 +31,9 @@
                         </button>
                         <nav>
                             <ul class="header-link-list hide-scrollbar">
-                                <li class="header-link-list__item js-open-modal" data-modal="modal-feedback-form"><a href="#main-section">вакансии</a></li>
-                                <li class="header-link-list__item js-open-modal" data-modal="modal-accept"><a href="#delivery-section">сеть компаний</a></li>
-                                <li class="header-link-list__item js-open-modal" data-modal="modal-policy"><a href="#picker-section">выгоды</a></li>
+                                <li class="header-link-list__item"><a href="#main-section">вакансии</a></li>
+                                <li class="header-link-list__item"><a href="#delivery-section">сеть компаний</a></li>
+                                <li class="header-link-list__item"><a href="#picker-section">выгоды</a></li>
                                 <li class="header-link-list__item"><a href="#vacancy-section">кому подойдет</a></li>
                                 <li class="header-link-list__item"><a href="#market-section">оформление</a></li>
                                 <li class="header-link-list__item"><a href="#drive-bonus-section">бонусы</a></li>
@@ -85,7 +83,7 @@
                         <div class="container">
                             <div class="main-section-form-inner">
                                 <input class="primary-input js-phone" type="text" value="" placeholder="+7 (___) ___-__-__">
-                                <button class="primary-button">Устроиться на работу</button>
+                                <button class="primary-button js-open-modal" data-modal="modal-feedback-form">Устроиться на работу</button>
                             </div>
                         </div>
                     </div>
@@ -132,7 +130,7 @@
                             </ul>
                             <div class="section-box-info">
                                 <p class="text">Сделайте шаг к работе с достойной оплатой и удобными условиями.</p>
-                                <button class="primary-button">Подробнее</button>
+                                <button class="primary-button js-open-modal" data-modal="modal-feedback-form">Подробнее</button>
                             </div>
                         </div>
                     </div>
@@ -224,7 +222,7 @@
                             </ul>
                             <div class="section-box-info">
                                 <p class="text">Получите доступ к месту работы со стабильной оплатой труда, где ценится качество и скорость выполнения заказов.</p>
-                                <button class="primary-button">Подробнее</button>
+                                <button class="primary-button js-open-modal" data-modal="modal-feedback-form">Подробнее</button>
                             </div>
                         </div>
                     </div>
@@ -460,7 +458,7 @@
                             <input class="primary-input" type="text" value="" placeholder="Ваше имя">
                             <input class="primary-input js-phone" type="text" value="" placeholder="+7 (___) ___-__-__">
                             <input class="primary-input" type="email" value="" placeholder="Ваш e-mail">
-                            <button class="primary-button m-auto">Выбрать вакансию</button>
+                            <button class="primary-button m-auto js-open-modal" data-modal="modal-feedback-form">Выбрать вакансию</button>
                         </div>                        
                     </div>
                     <img src="images/search-vacancy-form.png" alt="" class="form-vacancy-absolute">
@@ -528,7 +526,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="primary-button m-auto arrow-hide" style="min-width: 451px;">Подать заявку</button>
+                        <button class="primary-button m-auto arrow-hide js-open-modal" data-modal="modal-feedback-form" style="min-width: 451px;">Подать заявку</button>
                     </div>
                 </section>
                 <section class="drive-bonus-section fade" id="drive-bonus-section">
@@ -593,7 +591,7 @@
                             <input class="primary-input" type="text" value="" placeholder="Ваше имя">
                             <input class="primary-input js-phone" type="text" value="" placeholder="+7 (___) ___-__-__">
                             <input class="primary-input" type="email" value="" placeholder="Ваш e-mail">
-                            <button class="primary-button m-auto">Заполните анкету</button>
+                            <button class="primary-button m-auto js-open-modal" data-modal="modal-accept">Заполните анкету</button>
                         </div>                        
                     </div>
                     <img src="images/form-bg-time.png" alt="" class="form-vacancy-absolute">
@@ -624,7 +622,7 @@
                                             </div>
                                             <p class="before-block">Результат</p>
                                             <p class="result">Cтабильный доход от <span class="c-red fw-black">30 000 рублей</span> в месяц, смены по 4–6 часов по выбранному графику.</p>
-                                            <button class="primary-button" style="min-width: 375px;">Хочу также</button>
+                                            <button class="primary-button js-open-modal" data-modal="modal-feedback-form" style="min-width: 375px;">Хочу также</button>
                                         </div>
                                   </div>
                                   <div class="swiper-slide">
@@ -645,7 +643,7 @@
                                             </div>
                                             <p class="before-block">Результат</p>
                                             <p class="result">Cтабильный доход от <span class="c-red fw-black">30 000 рублей</span> в месяц, смены по 4–6 часов по выбранному графику.</p>
-                                            <button class="primary-button" style="min-width: 375px;">Хочу также</button>
+                                            <button class="primary-button js-open-modal" data-modal="modal-feedback-form" style="min-width: 375px;">Хочу также</button>
                                         </div>
                                   </div>
                                   <div class="swiper-slide">
@@ -666,7 +664,7 @@
                                             </div>
                                             <p class="before-block">Результат</p>
                                             <p class="result">Cтабильный доход от <span class="c-red fw-black">30 000 рублей</span> в месяц, смены по 4–6 часов по выбранному графику.</p>
-                                            <button class="primary-button" style="min-width: 375px;">Хочу также</button>
+                                            <button class="primary-button js-open-modal" data-modal="modal-feedback-form" style="min-width: 375px;">Хочу также</button>
                                         </div>
                                   </div>
                                 </div>
@@ -707,7 +705,7 @@
                             </p>
                         </div>
                         <p class="text">Постоянно развиваемся и расширяем партнерскую сеть, чтобы предлагать лучшие условия труда с достойной оплатой и возможностью карьерного роста.</p>
-                        <button class="primary-button">Узнать подробнее</button>
+                        <button class="primary-button js-open-modal" data-modal="modal-feedback-form">Узнать подробнее</button>
                     </div>
                 </section>
                 <section class="faq-section fade" id="faq-section">
@@ -734,7 +732,7 @@
                                 </div>
                             </div>
                             <div class="accordion order">
-                                <button class="primary-button arrow-hide">Задать другой вопрос</button>
+                                <button class="primary-button arrow-hide js-open-modal" data-modal="modal-feedback-form">Задать другой вопрос</button>
                             </div>
                             <div class="accordion">
                                 <div class="accordion-head">
@@ -964,7 +962,7 @@
                             <input class="primary-input" type="text" value="" placeholder="Ваше имя">
                             <input class="primary-input js-phone" type="text" value="" placeholder="+7 (___) ___-__-__">
                             <input class="primary-input" type="email" value="" placeholder="Ваш e-mail">
-                            <button class="primary-button m-auto">Обратиться</button>
+                            <button class="primary-button m-auto js-open-modal" data-modal="modal-feedback-form">Обратиться</button>
                         </div>                        
                     </div>
                     <img src="images/form-bg3.png" alt="" class="form-vacancy-absolute top">
@@ -1006,6 +1004,7 @@
                                 <a href="#" class="social-links-list__item"><img src="images/icons/mail.svg" alt=""></a>
                             </div>
                         </div>
+                        <p class="text js-open-modal" data-modal="modal-policy">Политика конфидециальности</p>
                     </div>
                 </div>
             </footer>
@@ -1030,7 +1029,7 @@
                             <input class="primary-input" type="text" value="" placeholder="Ваше имя">
                             <input class="primary-input js-phone" type="text" value="" placeholder="+7 (___) ___-__-__">
                             <input class="primary-input" type="email" value="" placeholder="Ваш e-mail">
-                            <button class="primary-button m-auto">Оставить заявку</button>
+                            <button class="primary-button m-auto js-open-modal" data-modal="modal-accept">Оставить заявку</button>
                         </div>
                     </div> 
                 </div>
