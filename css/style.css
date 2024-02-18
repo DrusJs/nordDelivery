@@ -1796,10 +1796,6 @@ p.text {
         margin-bottom: -20px;
         font-size: 60px;
     }
-    .main-section-cards {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }   
     .header-phone {
         flex-direction: column;
         margin-right: 0;
@@ -1874,14 +1870,21 @@ p.text {
     .form-vacancy-section.mobile {
         padding: 40px 0;
     }
+
+    .section-box .absolute {
+        height: 400px;
+        width: auto;
+        right: calc(50% - 170px);
+    }
+    .section-box.fire .absolute {
+        right: calc(50% - 180px);
+    }
     .section-box {
+        padding: 40px 30px 340px;
         border-radius: 0;
     }
-    .section-box .absolute {
-        display: none;
-    }
-    .section-box {
-        padding: 40px 30px;
+    .section-box.fire {
+        padding: 40px 30px 400px;
     }
     .faq-section {
         background-position: top 50px left, top 50px right;
@@ -2017,9 +2020,11 @@ p.text {
     }
 
     .main-section-cards {
-        padding: 20px 0;
-        overflow: visible;
-        flex-wrap: wrap;
+        display: flex;
+        overflow: scroll;
+        margin-left: -30px;
+        padding: 20px 30px;
+        width: 100vw;
         gap: 30px;
         margin-top: 26px;
     }
@@ -2187,7 +2192,9 @@ p.text {
         width: 32px;
         height: 32px;
     }
-
+    .main-section .wd {
+        display: none;
+    }
     .swiper-review .swiper-button-prev {
         right: 42px;
     }
@@ -2218,6 +2225,14 @@ p.text {
         margin: 0 0 30px -18px;
         padding: 4px 30px 16px;
         width: calc(100vw + 18px);
+    }
+    .main-section-cards {
+        margin-left: -18px;
+        padding: 20px 18px;
+        gap: 10px;
+    }
+    .main-section-cards__item {
+        padding: 16px 18px;
     }
     .scroll-wrapper.vacancy {
         margin: 0px 0 20px -18px;
