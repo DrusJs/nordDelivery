@@ -1444,6 +1444,10 @@ p.text {
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
+    margin-right: 300px;
+}
+.policy-flex p.text {
+    font-size: 14px;
 }
 .footer__by {
     display: flex;
