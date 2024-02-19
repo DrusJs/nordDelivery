@@ -1441,11 +1441,11 @@ p.text {
 }
 
 .modal.bg-form {
-    background-image:  url(../images/modal-form-bg.png), url(../images/from-vacancy-bg2.png);
+    background-image:  url(../images/search-vacancy-form.png), url(../images/from-vacancy-bg2.png);
     background-color: var(--color-black);
     background-repeat: no-repeat, no-repeat;
-    background-size: 328px, cover;
-    background-position: bottom right 100px, center center;
+    background-size: 700px, cover;
+    background-position: bottom right, center center;
 }
 .modal.bg-accept {
     background-image:  url(../images/modal-accept-bg.png), url(../images/from-vacancy-bg2.png);
