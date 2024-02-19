@@ -1229,9 +1229,7 @@ p.text {
     height: fit-content;
     padding: 20px 85px 5px;
 }
-.swiper-review-wrapper {
-   
-}
+
 .swiper.swiper-review {
     padding-top: 130px;
 }
@@ -1240,7 +1238,7 @@ p.text {
     position: absolute;
     overflow: hidden;
     top: -100px;
-    border-radius: 50px;
+    border-radius: 70px;
     right: 30px;
 }
 .swiper-review .preview video {
