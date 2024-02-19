@@ -1238,8 +1238,14 @@ p.text {
 .swiper-review .preview {
     width: 125px;
     position: absolute;
+    overflow: hidden;
     top: -100px;
+    border-radius: 50px;
     right: 30px;
+}
+.swiper-review .preview video {
+    height: 185px;
+    transform: translateX(-20%);
 }
 
 .swiper-review .swiper-slide {
