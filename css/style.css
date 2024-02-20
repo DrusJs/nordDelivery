@@ -1224,7 +1224,6 @@ p.text {
     overflow: hidden;
     padding: 0 85px;
     height: 0;
-    /* transition: var(--transition); */
 }
 .accordion.active .accordion-dropdown {
     height: fit-content;
@@ -1244,6 +1243,10 @@ p.text {
 }
 .swiper-review .preview video {
     height: 185px;
+    transform: translateX(-20%);
+}
+.swiper-review .preview img {
+    width: 100%;
     transform: translateX(-20%);
 }
 
