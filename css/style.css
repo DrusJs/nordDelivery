@@ -1234,7 +1234,7 @@ p.text {
     padding-top: 130px;
 }
 .swiper-review .preview {
-    width: 125px;
+    width: 120px;
     position: absolute;
     overflow: hidden;
     top: -100px;
@@ -1247,7 +1247,6 @@ p.text {
 }
 .swiper-review .preview img {
     width: 100%;
-    transform: translateX(-20%);
 }
 
 .swiper-review .swiper-slide {
@@ -1271,8 +1270,10 @@ p.text {
 .swiper-review .swiper-slide .rating {
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
     align-items: center;
+}
+.swiper-review .swiper-slide .rating .stars {
+    display: flex;
 }
 .swiper-review .swiper-slide .name {
     font-family: var(--font-family-primary);
