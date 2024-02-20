@@ -1271,6 +1271,7 @@ p.text {
 .swiper-review .swiper-slide .rating {
     display: flex;
     justify-content: space-between;
+    flex-wrap: nowrap;
     align-items: center;
 }
 .swiper-review .swiper-slide .name {
