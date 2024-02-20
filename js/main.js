@@ -129,4 +129,23 @@ SmoothScroll({
     // Поддержка тачпада
     touchpadSupport : true,
 })
-console.log(1)
+
+document.querySelectorAll('.points').forEach(el=>{
+    let scrolContainer = el.parentElement.querySelector('.hide-scrollbar')
+    let scrolWidth = scrolContainer.firstElementChild.offsetWidth - 10
+
+    
+
+    scrolContainer.addEventListener('scroll', ()=>{
+        let count = Math.floor(scrolContainer.scrollLeft / scrolWidth)
+        // console.log(count, scrolContainer.scrollLeft, scrolWidth)
+        let block = el.querySelectorAll('.points__item')[count]
+        if (!block) {return}
+        if (block.classList.contains('active')) {
+        } else {
+            el.querySelector('.active').classList.remove('active')
+            block.classList.add('active')
+        }
+        
+    })
+})
