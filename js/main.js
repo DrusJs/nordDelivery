@@ -149,3 +149,16 @@ document.querySelectorAll('.points').forEach(el=>{
         
     })
 })
+
+if (document.querySelector('.preview video')) {
+    document.querySelectorAll('.preview video').forEach(el=>{
+        el.addEventListener('click', (event)=>{
+            event.currentTarget.classList.toggle('js-play')
+            if (event.currentTarget.classList.contains('js-play')) {
+                event.currentTarget.play()
+            } else {
+                event.currentTarget.pause()
+            }
+        })
+    })
+}
