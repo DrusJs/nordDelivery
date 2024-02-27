@@ -1242,11 +1242,11 @@ p.text {
     right: 30px;
 }
 .swiper-review .preview video {
+    min-width: 100%; 
     height: 185px;
     transform: translateX(-20%);
 }
 .swiper-review .preview img {
-    width: 100%;
 }
 
 .swiper-review .swiper-slide {
