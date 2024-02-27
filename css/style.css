@@ -1235,6 +1235,7 @@ p.text {
 }
 .swiper-review .preview {
     width: 120px;
+    height: 185px;
     position: absolute;
     overflow: hidden;
     top: -100px;
@@ -1242,7 +1243,7 @@ p.text {
     right: 30px;
 }
 .swiper-review .preview video {
-    min-width: 100%; 
+    min-width: 120px; 
     min-height: 185px;
     transform: translateX(-20%);
 }
