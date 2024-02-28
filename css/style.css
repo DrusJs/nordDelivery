@@ -1244,6 +1244,7 @@ p.text {
 }
 .swiper-review .preview video {
     width: 130px;
+    min-height: 185px;
     height: auto;
 }
 
