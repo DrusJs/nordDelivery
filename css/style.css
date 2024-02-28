@@ -1243,9 +1243,8 @@ p.text {
     right: 30px;
 }
 .swiper-review .preview video {
-    min-width: 100%; 
-    height: 185px;
-    transform: translateX(-20%);
+    width: 130px;
+    height: auto;
 }
 
 .swiper-review .preview img {
