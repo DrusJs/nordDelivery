@@ -1235,20 +1235,27 @@ p.text {
 }
 .swiper-review .preview {
     width: 120px;
-    height: 185px;
+    height: auto;
+    max-height: 185px;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     overflow: hidden;
     top: -100px;
     border-radius: 70px;
     right: 30px;
 }
 .swiper-review .preview video {
-    width: 130px;
-    min-height: 185px;
-    height: auto;
+    width: 100%;
+    min-width: 120px;
+    object-fit: cover;
 }
 
 .swiper-review .preview img {
+    width: 100%;
+    min-width: 120px;
+    object-fit: cover;
 }
 
 .swiper-review .swiper-slide {
